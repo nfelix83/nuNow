@@ -1,0 +1,15 @@
+{
+  "name": "whats_new",
+  "version": "1.0.0",
+  "description": "Aggregate homepage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Noel Felix",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.7.7",
+    "express": "^4.13.4"
+  }
+}
