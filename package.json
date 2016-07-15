@@ -4,7 +4,7 @@
   "description": "Aggregate homepage",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server/server.js",
+    "start": "forever -w server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Noel Felix",
@@ -15,10 +15,13 @@
     "express": "^4.13.4",
     "gulp": "^3.9.1",
     "mongoose": "^4.4.10",
+    "nodemon": "^1.9.2",
     "socket.io": "^1.4.5"
   },
   "devDependencies": {
-    "morgan": "^1.7.0",
-    "nodemon": "^1.9.1"
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.1",
+    "karma-jasmine": "^1.0.2",
+    "morgan": "^1.7.0"
   }
 }

@@ -1,21 +1,12 @@
-var express = require('express');
-var app = express();
-var server = require('http').Server(app);
-var db = require('../db/db.js');
+let express   = require('express'),
+    mongoose  = require('mongoose');
 
-var bodyParser = require('body-parser');
-var morgan = require('morgan');
-var path = require('path');
+let app = express();
 
-var port = 8080;
+mongoose.connect('mongodb://localhost/nunow');
 
-app.use(bodyParser());
-app.use(morgan('dev'));
+require('./config/middleware.js')(app, express);
 
-app.get('/', function (req, res) {
-  res.sendfile(path.join(__dirname, '../client/', 'index.html'));
-});
+app.listen(8080);
 
-server.listen(port, function () {
-  console.log('You\'re listening to the soothing sounds of port ' + port + 'AM.');
-});
+module.exports = app;
