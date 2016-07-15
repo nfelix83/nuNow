@@ -4,12 +4,24 @@
   "description": "Aggregate homepage",
   "main": "app.js",
   "scripts": {
+    "start": "forever -w server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Noel Felix",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "bower": "^1.7.7",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "mongoose": "^4.4.10",
+    "nodemon": "^1.9.2",
+    "socket.io": "^1.4.5"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.1",
+    "karma-jasmine": "^1.0.2",
+    "morgan": "^1.7.0"
   }
 }
