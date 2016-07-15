@@ -7,6 +7,6 @@ require('./config/middleware.js')(app, express);
 
 mongoose.connect(process.env.DB_PATH);
 
-app.listen(8080);
+app.listen(process.env.PORT);
 
 module.exports = app;
