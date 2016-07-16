@@ -2,6 +2,7 @@ logs
 *.log
 npm-debug.log*
 .env
+productBrainstorm.txt
 
 node_modules
 bower_components
