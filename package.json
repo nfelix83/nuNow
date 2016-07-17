@@ -16,6 +16,7 @@
     "express": "^4.13.4",
     "gulp": "^3.9.1",
     "mongoose": "^4.4.10",
+    "phantomjs": "^2.1.7",
     "request": "^2.73.0",
     "socket.io": "^1.4.5"
   },
