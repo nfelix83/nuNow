@@ -12,11 +12,12 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "bower": "^1.7.7",
+    "cheerio": "^0.20.0",
     "dotenv": "^2.0.0",
     "express": "^4.13.4",
     "gulp": "^3.9.1",
     "mongoose": "^4.4.10",
-    "phantomjs": "^2.1.7",
+    "phantom": "^2.1.12",
     "request": "^2.73.0",
     "socket.io": "^1.4.5"
   },
